@@ -36,7 +36,7 @@ jobs:
       run: |
         mkdir testresults
         pip install pytest-cov
-        pip install pytest && 
+        pip install pytest 
         pytest --cov=./ --cov=./ --cov-config=.coveragerc --cov-report term-missing
         pip install pycmd 
         py.cleanup Tests/
